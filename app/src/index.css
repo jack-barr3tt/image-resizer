@@ -1,0 +1,39 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  font-family: "Inter", sans-serif;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+@layer base {
+  h1 {
+    @apply text-4xl font-bold;
+  }
+
+  label {
+    @apply my-auto;
+  }
+}
+
+@layer components {
+  .btn {
+    @apply bg-blue-500 hover:bg-blue-700 text-white px-4 py-2 rounded-md;
+  }
+
+  .btn-red {
+    @apply btn bg-red-500 hover:bg-red-600;
+  }
+
+  .textbox {
+    @apply outline outline-gray-400 rounded-md p-2;
+  }
+}
